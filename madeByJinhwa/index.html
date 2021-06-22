@@ -8,94 +8,134 @@
     <title>DrumPage</title>
     <link rel="stylesheet" href="style.css" />
     <script src="main.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="sound">
-        <audio data-key="65" src="sound/crash.wav"></audio>
-        <audio data-key="83" src="sound/12inchtom.wav"></audio>
-        <audio data-key="68" src="sound/13inchtom.wav"></audio>
-        <audio data-key="70" src="sound/ride.wav"></audio>
-        <audio data-key="74" src="sound/hihat.wav"></audio>
-        <audio data-key="75" src="sound/snare.wav"></audio>
-        <audio data-key="32" src="sound/bass.wav"></audio>
-        <audio data-key="76" src="sound/floortom.wav"></audio>
-    </div>
+    <section>
+        <div class="component">
 
-
-    <div class="topContainer">
-        <div class="crash">
-            <img src="image/crash.png" alt="crash" />
-            <div class="text">
-                <span>crash</span>
+            <div class="sound">
+                <audio data-key="65" src="sound/crash.wav"></audio>
+                <audio data-key="83" src="sound/12inchtom.wav"></audio>
+                <audio data-key="68" src="sound/13inchtom.wav"></audio>
+                <audio data-key="70" src="sound/ride.wav"></audio>
+                <audio data-key="74" src="sound/hihat.wav"></audio>
+                <audio data-key="75" src="sound/snare.wav"></audio>
+                <audio data-key="32" src="sound/bass.wav"></audio>
+                <audio data-key="76" src="sound/floortom.wav"></audio>
+            </div>
+        
+        
+            <div class="topContainer">
+                <div class="crash">
+                    <img src="image/crash.png" alt="crash" />
+                    <div class="text">
+                        <a href="#">
+                            <span>crash</span>
+                            <div class="liquid"></div>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="musicBar">
+                    <img src="image/musicBar.png" alt="musicbar" />
+                </div>
+        
+        
+                <div class="ride">
+                    <img src="image/ride.png" alt="ride" />
+                    <div class="text">
+                        <a href="#">
+                            <span>ride</span>
+                            <div class="liquid"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="middleTopContainer">
+                <div class="smallTom">
+                    <img src="image/small tom.png" alt="smalltom" />
+                    <div class="text">
+                        <a href="#">
+                            <span>small tom</span>
+                            <div class="liquid"></div>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="middleTom">
+                    <img src="image/middle tom.png" alt="middletom" />
+                    <div class="text">
+                        <a href="#">
+                            <span>middle tom</span>
+                            <div class="liquid"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="middleDownContainer">
+                <div class="hi-hat">
+                    <img src="image/hi-hat.png" alt="hihat" />
+                    <div class="text">
+                        <a href="#">
+                            <span>hi-hat</span>
+                            <div class="liquid"></div>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="snare">
+                    <img src="image/snare.png" alt="snare" />
+                    <div class="text">
+                        <a href="#">
+                            <span>snare</span>
+                            <div class="liquid"></div>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="bass">
+                    <img src="image/bass.png" alt="bass" />
+                    <div class="text">
+                        <a href="#">
+                            <span>bass</span>
+                            <div class="liquid"></div>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="floorTom">
+                    <img src="image/floor tom.png" alt="floortom" />
+                    <div class="text">
+                        <a href="#">
+                            <span>floor tom</span>
+                            <div class="liquid"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="downContainer">
+                <div class="keyboard">
+                    <img src="image/keyboard.png" alt="keyboard" />
+        
+                </div>
             </div>
         </div>
 
-        <div class="musicBar">
-            <img src="image/musicBar.png" alt="musicbar" />
-        </div>
-
-
-        <div class="ride">
-            <img src="image/ride.png" alt="ride" />
-            <div class="text">
-                <span>ride</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="middleTopContainer">
-        <div class="smallTom">
-            <img src="image/small tom.png" alt="smalltom" />
-            <div class="text">
-                <span>small tom</span>
-            </div>
-        </div>
-
-        <div class="middleTom">
-            <img src="image/middle tom.png" alt="middletom" />
-            <div class="text">
-                <span>middle tom</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="middleDownContainer">
-        <div class="hi-hat">
-            <img src="image/hi-hat.png" alt="hihat" />
-            <div class="text">
-                <span>hi-hat</span>
-            </div>
-        </div>
-
-        <div class="snare">
-            <img src="image/snare.png" alt="snare" />
-            <div class="text">
-                <span>snare</span>
-            </div>
-        </div>
-
-        <div class="bass">
-            <img src="image/bass.png" alt="bass" />
-            <div class="text">
-                <span>bass</span>
-            </div>
-        </div>
-
-        <div class="floorTom">
-            <img src="image/floor tom.png" alt="floortom" />
-            <div class="text">
-                <span>floor tom</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="downContainer">
-        <div class="keyboard">
-            <img src="/image/keyboard.png" alt="keyboard" />
-
-        </div>
-    </div>
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+    </section>
 </body>
 
 </html>

@@ -1,17 +1,92 @@
-body{
-    /* width: 100%;
+html, body {
     height: 100%;
-    margin: 0; */
+}
+.img {
+    width: 100%;
+    object-fit: contain;
+}
+.component {
+    text-align: center;
+} 
+
+/* background animation */
+section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #3586ff;
+    /* overflow: hidden; */
+}
+
+.wave {
+    overflow: hidden;
+}
+
+section .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+}
+
+section .wave.wave1 {
+    animation: wave_animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+section .wave.wave2 {
+    animation: wave_animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 0;
+}
+section .wave.wave3 {
+    animation: wave_animate 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15;
+}
+section .wave.wave4 {
+    animation: wave_animate 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+
+@keyframes wave_animate {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
     justify-content: center;
 }
 
 /* container starts */
 .topContainer {
+    max-width: 100%;
     position: relative;
     padding-top: 10rem;
+    margin: 0;
     display: flex;
-    
+    border: 10px solid #73ad21;
 }
+
 .middleTopContainer {
     position: relative;
     top: -17rem;
@@ -30,10 +105,15 @@ body{
 }
 
 /* drum components starts */
+.crash, .musicBar, .ride {
+    display: inline-block;
+}
 .crash {
-    padding-top: 5rem;
+    max-width: 100%;
+    padding-top: 5px;
     padding-left: 5rem;
     width: auto;
+
 }
 .musicBar{
     padding-top: 15rem;
@@ -45,12 +125,12 @@ body{
     padding-right: 10rem;
     width: auto;
 }
-/* .smallTom {
+.smallTom {
     padding-right: 0;
 }
 .middleTom{
 
-} */
+}
 .hi-hat{
     z-index: 3;
 }
@@ -77,4 +157,79 @@ body{
 }
 
 
-/* background animation */
+
+
+/* liquid button animation starts */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #0c0c0c;
+}
+
+a {
+    position: relative;
+    padding: 20px 50px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 50px;
+}    
+
+a span {
+    position: relative;
+    left: 0;
+    top: -80px;
+    width: 200px;
+    height: 200px;
+    background: #4973ff;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+    transition: .5s;
+}
+
+a .liquid::after,
+a .liquid::before {
+    content: '';
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: #000;
+}
+
+a .liquid::before {
+    border-radius: 45%;
+    background: rgba(20, 20, 20, 1);
+    animation: animate 5s linear infinite;
+}
+
+a .liquid::after {
+    border-radius: 40%;
+    background: rgba(20, 20, 20, .5);
+    animation: animate 10s linear infinite;
+}
+
+a:hober .liquid {
+    top: -120px;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+} */
